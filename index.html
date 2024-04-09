@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <style>
+        html{
+            background-color: #f5f5f5;
+        }
+        /* CSS for about.html */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .separator {
+            border-right: 2px solid black;
+            height: 400px; /* Adjust the height of the line */
+            margin: 0 100px;
+        }
+
+        .navigation {
+            background-color: black; /* Changed background color to black */
+            text-align: center;
+            font-size: 25px;
+            display: flex; /* Added flexbox display */
+            justify-content: flex-end; /* Pushes elements to the right */
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #f5f5f5; /* Changed text color to white */
+            margin: 0 20px;
+            transition: color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
+        }
+
+        .navigation a:first-child {
+            margin-right: auto; /* Pushes Adithya TG to the left */
+        }
+
+        .navigation a:hover {
+            color: black; /* Change text color on hover */
+            background-color: #f5f5f5; /* Change background color on hover */
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .photo {
+            margin: 0 20px;
+        }
+
+        .photo img {
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .about-me {
+            text-align: justify;
+            margin-top: 30px;
+            margin-right: 100px;
+        }
+
+        .additional-links {
+            text-align: left;
+            margin-top: 30px;
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+
+        .additional-links a {
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px; /* Adjust the font size of the links */
+            padding: 10px 20px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth effect */
+        }
+
+        .additional-links a img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .additional-links a:hover {
+            background-color: #f4f4f4;
+            border-color: #ccc;
+        }
+
+        .news {
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+        .news h1 {
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 50px; /* Add space between the content and footer */
+        }
+    </style>
+</head>
+<body>
+<div class="navigation">
+    <a href="index.html" style="padding-top: 20px; padding-bottom: 20px;">Adithya TG</a> 
+    <a href="index.html" style="padding-top: 20px; padding-bottom: 20px;">About me</a> 
+    <a href="publications.html" style="padding-top: 20px; padding-bottom: 20px;">Publications</a>
+    <a href="AdithyaTG Resume.pdf" target="_blank" style="padding-top: 20px; padding-bottom: 20px;">Resume</a>
+</div>
+<div class="profile-container">
+    
+    <div class="photo">
+        <img src="image.jpeg" alt="Adithya TG">
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="about-me">
+        <p>
+        Hey there!
+        </p>
+        <p>
+            I am pursuing my Bachelor’s degree in Computer Science and Engineering at PES University, Bangalore. I have previously studied in Allen Career Institute and Deccan International School.             
+        </p>
+        <p>
+            My research interests mainly lie in Computer Vision and it's applications, especially in the medical domain. I love to explore it's applications in enhancing everyday experiences and solving complex problems. From developing facial recognition systems to contributing to research on detecting brain tumors using AI-based CNNs, my journey reflects a strong passion for leveraging computer vision to innovate and improve lives, which can be found on my resume and publications.
+        </p>
+        <p>
+            My role as a Volunteer has allowed me to contribute meaningfully to the community through charitable events. Beyond academics, I love playing chess and enjoy cooking, reading and streaming games. Passionate about visual storytelling and teaching, I aspire to make a positive impact in both the academic and creative spheres.
+        </p>
+    </div>
+</div>
+
+<!-- Additional Links -->
+<div class="additional-links">
+    <a href="https://github.com/adithyatg" target="_blank"><img src="GitHubLogo.png" alt="GitHub Logo">GitHub</a>
+    <a href="https://drive.google.com/drive/folders/1xzqiZq1R074EBvPmpBa8gCX86HlyNehQ?usp=sharing" target="_blank"><img src="DriveLogo.jpeg" alt="Google Drive Logo">Projects</a>
+    <a href="https://www.linkedin.com/in/adithya-tg/" target="_blank"><img src="LinkedinLogo.png" alt="LinkedIn Logo">LinkedIn</a>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="mailto:adithyatg.work@gmail.com"><img src="MailLogo.jpeg" alt="Email Logo">Email</a>
+</div>
+<!-- End of Additional Links -->
+
+<div class="news">
+    <h1>News</h1>
+    <div class="news-item">
+        <div class="news-item">
+            <h3>December 2024</h3>
+            <p>
+                Attended the conference Hinweis Second International Conference on Advanced Research in Engineering and Technology (ARET) held in Kolkata, India virtually to present my paper.
+            </p>
+        </div>
+        <h3>November 2024</h3>
+        <p>
+            Received the CNR award and scholarship given to top achievers in academics at PES University.
+        </p>
+    </div>
+    <div class="news-item">
+        <h3>June 2023</h3>
+        <p>
+            Attended the conference Grenze International Journal of Engineering & Technology (GIJET).
+        </p>
+    </div>
+    <div class="news-item">
+        <h3>August 2022</h3>
+        <p>
+            Attended the International Journal of Computer Applications conference meet.
+        </p>
+    </div>
+    <div class="news-item">
+        <h3>July 2022</h3>
+        <p>
+            Attended the Matjournals online conference meet.
+        </p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Adithya TG. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
