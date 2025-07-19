@@ -331,18 +331,13 @@ Practices".
         <span id="view-more" class="view-more" onclick="toggleNews()">View More</span>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Adithya TG. All rights reserved.</p>
-        <p>Visitor Count: <span id="visits">Loading...</span></p>
-    </footer>
+<footer>
+  <p>&copy; 2025 Adithya TG. All rights reserved.</p>
+  <p>Visitor Count: 
+    <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=page&initCount=0" title="Visitor counter" Alt="visitor counter" border="0" />
+  </p>
+</footer>
 
-    <script>
-      fetch('https://api.countapi.xyz/hit/adithyatg.github.io/visits')
-        .then(res => res.json())
-        .then(data => {
-          document.getElementById('visits').innerText = data.value;
-        });
-    </script>
 </body>
 </html>
 
