@@ -333,6 +333,18 @@ Practices".
 
     <footer>
         <p>&copy; 2025 Adithya TG. All rights reserved.</p>
+        <p>Visitor Count: <span id="visits">Loading...</span></p>
     </footer>
+
+    <script>
+      fetch('https://api.countapi.xyz/hit/adithyatg.github.io/visits')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('visits').innerText = data.value;
+        });
+    </script>
+</body>
+</html>
+
 </body>
 </html>
