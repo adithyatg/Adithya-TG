@@ -333,11 +333,21 @@ Practices".
 
 <footer>
   <p>&copy; 2025 Adithya TG. All rights reserved.</p>
-  <p>Visitor Count:
-    <img src="https://www.hitwebcounter.com/counter/counter.php?page=21195030&style=0003&nbdigits=5&type=page&initCount=0"
-         title="Visitor Counter" alt="visitor counter" style="vertical-align: middle; height: 20px;" />
-  </p>
+  <p>Visitor Count: <span id="visits">Loading...</span></p>
+
+  <script>
+    fetch('https://api.countapi.xyz/hit/adithyatg.github.io/visits')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('visits').innerText = data.value;
+      })
+      .catch(err => {
+        document.getElementById('visits').innerText = "Error";
+        console.error("Visit counter failed:", err);
+      });
+  </script>
 </footer>
+
 
 
 </body>
