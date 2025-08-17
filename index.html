@@ -2,30 +2,30 @@
 <html>
 <head>
     <title>About Me</title>
-    <style>
+        <style>
         html {
             background-color: #ffffff;
         }
-
+    
         /* CSS for about.html */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-
+    
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-
+    
         .separator {
             border-right: 2px solid black;
             height: 400px; /* Adjust the height of the line */
             margin: 0 100px;
         }
-
+    
         .navigation {
             background-color: black; /* Changed background color to black */
             text-align: center;
@@ -33,34 +33,34 @@
             display: flex; /* Added flexbox display */
             justify-content: flex-end; /* Pushes elements to the right */
         }
-
+    
         .navigation a {
             text-decoration: none;
             color: #ffffff; /* Changed text color to white */
             margin: 0 20px;
             transition: color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
         }
-
+    
         .navigation a:first-child {
             margin-right: auto; /* Pushes Adithya TG to the left */
         }
-
+    
         .navigation a:hover {
             color: black; /* Change text color on hover */
             background-color: #ffffff; /* Change background color on hover */
         }
-
+    
         .profile-container {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 50px;
         }
-
+    
         .photo {
             margin: 0 20px;
         }
-
+    
         .photo img {
             margin-top: 30px;
             margin-left: 100px;
@@ -68,13 +68,13 @@
             height: 300px;
             border-radius: 50%;
         }
-
+    
         .about-me {
             text-align: justify;
             margin-top: 30px;
             margin-right: 100px;
         }
-
+    
         .additional-links {
             text-align: left;
             margin-top: 30px;
@@ -82,7 +82,7 @@
             border: 1px solid transparent;
             border-radius: 5px;
         }
-
+    
         .additional-links a {
             display: inline-block;
             margin-bottom: 10px;
@@ -95,37 +95,37 @@
             border-radius: 5px;
             transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth effect */
         }
-
+    
         .additional-links a img {
             width: 20px;
             height: 20px;
             vertical-align: middle;
             margin-right: 10px;
         }
-
+    
         .additional-links a:hover {
             background-color: #ffffff;
             border-color: #ffffff;
         }
-
+    
         .news {
             margin-left: 50px;
             margin-top: 50px;
         }
-
+    
         .news h1 {
             margin-bottom: 20px;
         }
-
+    
         .news-item {
             margin-bottom: 20px;
         }
-
+    
         .current {
             margin-left: 50px;
             margin-right: 80px;
         }
-
+    
         /* Footer styles */
         footer {
             text-align: center;
@@ -137,7 +137,7 @@
             width: 100%;
             margin-top: 50px; /* Add space between the content and footer */
         }
-
+    
         /* Styles for the "View More" button */
         .view-more {
             cursor: pointer;
@@ -145,11 +145,50 @@
             text-decoration: underline;
             margin-top: 10px;
         }
-
+    
         .hidden {
             display: none;
         }
+    
+        /* Make images & text responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column; /* stack photo and about text vertically */
+                text-align: center;
+            }
+    
+            .photo img {
+                margin: 20px 0; /* center image, remove left push */
+                width: 200px; /* shrink for mobile */
+                height: 200px;
+            }
+    
+            .separator {
+                display: none; /* hide vertical line on small screens */
+            }
+    
+            .about-me {
+                margin: 20px; /* reduce right margin */
+                text-align: left; /* keep readability */
+            }
+    
+            .navigation {
+                flex-direction: column; /* nav items stack */
+                font-size: 18px; /* smaller font */
+            }
+    
+            .navigation a {
+                margin: 10px 0;
+            }
+        }
     </style>
+
     <script>
         function toggleNews() {
             const hiddenNewsItems = document.querySelectorAll('.hidden');
